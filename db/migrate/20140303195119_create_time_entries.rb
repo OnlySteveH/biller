@@ -4,7 +4,7 @@ class CreateTimeEntries < ActiveRecord::Migration
       t.float :time
       t.belongs_to :customer
       t.belongs_to :employee
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

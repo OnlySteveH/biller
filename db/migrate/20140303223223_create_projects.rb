@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :name
       t.integer :customer_id
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

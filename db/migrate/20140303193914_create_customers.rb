@@ -3,7 +3,7 @@ class CreateCustomers < ActiveRecord::Migration
     create_table :customers do |t|
       t.string :name, :about
       t.integer :balance
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

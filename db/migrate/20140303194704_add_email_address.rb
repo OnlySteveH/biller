@@ -6,5 +6,4 @@ class AddEmailAddress < ActiveRecord::Migration
   def down
   	remove_column :customers, :email
   end
-
 end
