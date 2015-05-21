@@ -1,6 +1,8 @@
 class TimeEntry < AccountEntry
   belongs_to :employee
 
+  #validates :time, numericalty: { greater_than: 0 }
+
   before_create :calculate_amount!
 
   def self.per_hour
@@ -14,4 +16,5 @@ class TimeEntry < AccountEntry
     end
     true
   end
+
 end
