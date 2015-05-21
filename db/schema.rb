@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303224605) do
+ActiveRecord::Schema.define(version: 20150521123456) do
 
   create_table "account_entries", force: true do |t|
     t.float    "time"
@@ -30,6 +30,10 @@ ActiveRecord::Schema.define(version: 20140303224605) do
     t.string   "about"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.integer  "zipcode"
+    t.string   "state"
+    t.integer  "employees"
   end
 
   create_table "employees_projects", force: true do |t|
