@@ -15,7 +15,7 @@ class Account < ActiveRecord::Base
 
   def update_balance!
     update_attributes(
-      balance: self.account_entries.sum(:amount)
+      balance: self.account_entries.approved.sum(:amount)
     )
   end
 

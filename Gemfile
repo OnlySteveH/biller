@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'faker', '~>1.4.3', group: :development
+gem 'state_machine'
+gem 'paper_trail'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
